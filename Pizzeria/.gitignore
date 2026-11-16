@@ -1,0 +1,34 @@
+# Real-time build output & Gradle cache
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+out/
+build/
+.gradle/
+.navigation/
+
+# Android Studio & IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+captures/
+.externalNativeBuild
+.cxx/
+local.properties
+
+# Log files
+*.log
+
+# Android profiling
+*.hprof
+
+# Backup files
+*~
+*.bak
