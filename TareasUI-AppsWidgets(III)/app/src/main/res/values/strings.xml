@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TareasUIAppWidget(III)</string>
+    <string name="btn_pregunta">"Hacer pregunta</string>
+    <string name="titulo">DialogosConRespuesta</string>
+    <string name="label_pregunta">Pulsa el botón para responder a la pregunta</string>
+    <string name="label_respuesta">¡Genial! Sigue practicando con las vistas y los diálogos.</string>
+    <string name="titleAlerta">Una Pregunta</string>
+    <string name="mensajeAlerta">¿Te gusta programar en Android?</string>
+    <string name="no_title">No</string>
+    <string name="si_title">Si</string>
+    <string name="label_btn_uno">Pregunta Sí/No</string>
+    <string name="label_btn_dos">Lista de elementos</string>
+    <string name="label_btn_tres">Elegir una opción</string>
+    <string name="label_btn_cuatro">Elegir varias opciones</string>
+</resources>
