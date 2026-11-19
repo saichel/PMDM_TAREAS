@@ -21,29 +21,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btnPregunta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="132dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/btn_pregunta"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleText" />
-
         <TextView
             android:id="@+id/textPregunta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="81dp"
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="41dp"
             android:layout_marginEnd="58dp"
             android:text="@string/label_pregunta"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnPregunta" />
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="397dp"
             android:layout_height="208dp"
             android:layout_marginStart="1dp"
@@ -79,6 +71,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_btn_cuatro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="214dp"
+            android:layout_height="313dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/btnRecordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btnRecordatorio" />
+
+            <Button
+                android:id="@+id/btnNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btnNombre" />
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btnBorrar" />
+
+            <Button
+                android:id="@+id/btnFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btnFecha" />
+
+            <Button
+                android:id="@+id/btnHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btnHora" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

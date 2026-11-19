@@ -2,14 +2,79 @@
     <string name="app_name">TareasUIAppWidget(III)</string>
     <string name="btn_pregunta">"Hacer pregunta</string>
     <string name="titulo">DialogosConRespuesta</string>
+
+
     <string name="label_pregunta">Pulsa el botón para responder a la pregunta</string>
     <string name="label_respuesta">¡Genial! Sigue practicando con las vistas y los diálogos.</string>
     <string name="titleAlerta">Una Pregunta</string>
     <string name="mensajeAlerta">¿Te gusta programar en Android?</string>
     <string name="no_title">No</string>
     <string name="si_title">Si</string>
+
     <string name="label_btn_uno">Pregunta Sí/No</string>
     <string name="label_btn_dos">Lista de elementos</string>
     <string name="label_btn_tres">Elegir una opción</string>
     <string name="label_btn_cuatro">Elegir varias opciones</string>
+
+    <string name="title_elementos">Seleciona un elemento</string>
+    <string-array name="lista_elementos">
+        <item>Na-Sodio</item>
+        <item>Pb-Paladio</item>
+        <item>Ba-Bario</item>
+        <item>Rh-Rodio</item>
+    </string-array>
+
+
+    <string name="title_opcion">Elige una opción</string>
+    <string-array name="opciones_unicas">
+        <item>@string/margarita_button</item>
+        <item>@string/hawaiana_button</item>
+        <item>@string/barbacoa_button</item>
+    </string-array>
+    <string name="margarita_button">Margarita</string>
+    <string name="hawaiana_button">Hawaiana</string>
+    <string name="barbacoa_button">Barbacoa</string>
+
+
+    <string name="title_opciones">Elige las que quieras</string>
+    <string name="message_opciones">¿Para qué plataformas te gustaría programar</string>
+    <string-array name="plataformas_lista">
+        <item>@string/android_checkbox</item>
+        <item>@string/ios_checkbox</item>
+        <item>@string/web_checkbox</item>
+        <item>@string/escritorio_checkbox</item>
+        <item>@string/videojuegos_checkbox</item>
+    </string-array>
+    <string name="android_checkbox">Android</string>
+    <string name="ios_checkbox">iOS</string>
+    <string name="web_checkbox">Web</string>
+    <string name="escritorio_checkbox">Escritorio</string>
+    <string name="videojuegos_checkbox">Videojuegos</string>
+
+
+    <string name="text_btnRecordatorio">Recordatorio</string>
+    <string name="title_recordatorio">Nueva versión disponible</string>
+    <string name="message_recordatorio">Hay una actualización de la app con mejoras y correcciones</string>
+    <string name="mas_tarde">Más tarde</string>
+    <string name="negativa">No, gracias</string>
+    <string name="positive">Actualizar</string>
+    
+    
+    <string name="text_btnNombre">Tu nombre</string>
+    <string name="title_Nombre">¿Cómo te llamas?</string>
+    <string name="label_Nombre">Tu nombre</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+    
+    
+    <string name="text_btnBorrar">Borrar respuestas</string>
+    <string name="title_borra">¿Borra la respuesta?</string>
+    <string name="message_borrar">Se borrará el texto que aparece en la parte superior</string>
+    <string name="borrar">Borrar</string>
+    
+    
+    <string name="text_btnFecha">Elegir una fecha</string>
+
+    <string name="text_btnHora">Elegir una hora</string>
+    
 </resources>
