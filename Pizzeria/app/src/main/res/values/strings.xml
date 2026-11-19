@@ -25,4 +25,20 @@
         <item>Clásica</item>
         <item>Rellena de queso</item>
     </string-array>
+
+    <string name="menu_carrito">Carrito</string>
+    <string name="menu_carta">Carta</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <string name="menu_acerca_de">Acerca de</string>
+
+    <string name="menu_ordenar">Ordenar</string>
+    <string name="orden_nombre">Nombre</string>
+    <string name="orden_precio">Precio</string>
+    <string name="bienvenida">Bienvenida</string>
+
+    <string name="abriendo_carrito">Carrito</string>
+    <string name="abriendo_carta">Carta</string>
+    <string name="abriendo_ajustes">Ajustes</string>
+    <string name="acerca_de_texto">Pizzeria proyecto SUPER</string>
+    <string name="aceptar">Aceptar</string>
 </resources>

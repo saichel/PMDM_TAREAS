@@ -8,6 +8,8 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.RadioButton
 import android.widget.SeekBar
 import android.widget.Toast
@@ -20,6 +22,8 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.doAfterTextChanged
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import com.venanciob.dam.pizzeria.databinding.ActivityMainBinding
 import java.util.Locale
 
@@ -61,14 +65,49 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         // Inicializar canal y comprobar permisos al arrancar
         crearCanalNotificacion()
         pedirPermisoNotificaciones()
-
         actualizarTextoCantidad(binding.sbCantidad.progress)
         configurarListeners()
+        setSupportActionBar(binding.toolbar)
+
     }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // "Infla" el recurso XML y añade sus opciones al objeto menu
+        menuInflater.inflate(R.menu.menu_principal, menu)
+        return true    // true: el menú se muestra
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_carrito -> {
+                Snackbar.make(binding.root, R.string.abriendo_carrito, Snackbar.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_carta -> {
+                Snackbar.make(binding.root, R.string.abriendo_carta, Snackbar.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_ajustes -> {
+                Snackbar.make(binding.root, R.string.abriendo_ajustes, Snackbar.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_acerca_de -> {
+                mostrarAcercaDe()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun mostrarAcercaDe() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(R.string.menu_acerca_de)
+            .setMessage(R.string.acerca_de_texto)
+            .setPositiveButton(R.string.aceptar, null)
+            .show()
+    }
+
 
     // 1. CREAR EL CANAL DE NOTIFICACIONES (Android 8.0 / API 26+)
     private fun crearCanalNotificacion() {
